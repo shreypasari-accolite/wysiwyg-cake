@@ -21,7 +21,7 @@ Or if your CakePHP application is setup as a git repository, you can add it as a
 
 Or
 	open terminal/command prompt (windows)
-	type composer require froala/wysiwyg-cake
+	`type composer require froala/wysiwyg-cake`
 
 Alternatively, you can download an archive from the [master branch on Github](https://github.com/froala/wysiwyg-cake/archive/master.zip) and extract the contents to `Froala plugin`.
 
@@ -29,6 +29,8 @@ Make sure that you load the plugin routes by adding to your bootstrap file(boots
 
 Plugin::loadAll(); or  Plugin::load('Froala');
 This will load all plugins at once or only the Froala plugin.
+
+In Application.php page add `$this->addPlugin('Froala');` to add the plugins and froalaEditor to your applicaiton.
 
 
 ## Usage
